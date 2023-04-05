@@ -1,4 +1,4 @@
-# Hadoop Hiver Docker
+# Hadoop Hive Docker
 Running Hive jobs using Docker
 
 ![img](./wallpaper.jpg)
