@@ -272,11 +272,9 @@ SQL:
         id INT,
         name STRING
     )
-
 SQL: 
     INSERT INTO fiscales
     VALUES (1, 'John'), (2, 'Jane'), (3, 'Bob')
-
 Inserted!
 Committed!
 SQL: SELECT * FROM fiscales
@@ -299,6 +297,30 @@ Row: (1, 'John')
 Row: (2, 'Jane')
 Row: (3, 'Bob')
 Connection closed!
+```
+
+#### Generating a CSV
+```bash
+virtualenv -p python3 .env/
+source .env/bin/activate
+pip install -r requirements.txt
+python3 app/test_csv.py
+```
+
+Then look at [result.csv](result.csv):
+```bash
+1,John
+2,Jane
+3,Bob
+1,John
+2,Jane
+3,Bob
+1,John
+2,Jane
+3,Bob
+1,John
+2,Jane
+3,Bob
 ```
 
 #### Visualizing the Hive web interface at [http://127.0.0.1:10002/](http://127.0.0.1:10002/)
